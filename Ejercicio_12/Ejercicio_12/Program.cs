@@ -47,8 +47,7 @@ namespace Ejercicio_12
             //Numero de palabras
             char[] separadores = {' ', ':', '\n', '_', '\r', '\t'};
             string[] palabras = contenido.Split(separadores, StringSplitOptions.RemoveEmptyEntries);
-            if (palabras.Length == 0) numeropalabras = 0;
-            else numeropalabras = palabras.Length;
+            numeropalabras = palabras.Length;
             Console.WriteLine("Número de palabras: {0} palabras",numeropalabras);
 
             Console.ReadKey();
